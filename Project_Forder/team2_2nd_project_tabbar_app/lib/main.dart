@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:team2_2nd_project_tabbar_app/Entertainment/enter_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Entertainment/enter_2.dart';
-import 'package:team2_2nd_project_tabbar_app/Entertainment/enter_3.dart';
-import 'package:team2_2nd_project_tabbar_app/Gallery/Gall_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Gallery/gall_2.dart';
-import 'package:team2_2nd_project_tabbar_app/Gallery/gall_3.dart';
-import 'package:team2_2nd_project_tabbar_app/Information/info_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Information/info_2.dart';
-import 'package:team2_2nd_project_tabbar_app/Information/info_3.dart';
-import 'package:team2_2nd_project_tabbar_app/Quiz/quiz_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Quiz/quiz_2.dart';
-import 'package:team2_2nd_project_tabbar_app/Quiz/quiz_3.dart';
 
+
+import 'Entertainment/enter_1.dart';
+import 'Entertainment/enter_2.dart';
+import 'Entertainment/enter_3.dart';
+import 'Gallery/gall_1.dart';
+import 'Gallery/gall_2.dart';
+import 'Gallery/gall_3.dart';
+import 'Information/info_1.dart';
+import 'Information/info_2.dart';
+import 'Information/info_3.dart';
+import 'Quiz/quiz_1.dart';
+import 'Quiz/quiz_2.dart';
+import 'Quiz/quiz_3.dart';
 import 'home.dart';
 
 void main() {

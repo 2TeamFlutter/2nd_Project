@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:team2_2nd_project_tabbar_app/Information/info_2.dart';
-import 'package:team2_2nd_project_tabbar_app/Information/info_3.dart';
+import 'package:team2_2nd_project_tabbar_app2/Information/info_2.dart';
+import 'package:team2_2nd_project_tabbar_app2/Information/info_3.dart';
 
 class Info1 extends StatefulWidget {
   const Info1({super.key});
@@ -45,11 +45,11 @@ class _Info1State extends State<Info1> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-               Padding(
+              Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(onPressed:() {
                     Navigator.push(context,MaterialPageRoute(builder: (context){
-            return info2();
+            return Info2();
           }));
                   } , 
                   style: ElevatedButton.styleFrom(
@@ -64,19 +64,19 @@ class _Info1State extends State<Info1> {
                   ),
                   ),
                 ),
-                 Padding(
+                Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(onPressed:() {
                     
-                     Navigator.push(context,MaterialPageRoute(builder: (context){
+                    Navigator.push(context,MaterialPageRoute(builder: (context){
                       return Info3();
-                           }));
+                        }));
                   } , 
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
-                     minimumSize: Size(120, 40),
+                    minimumSize: Size(120, 40),
                   ),
-                 
+              
                   child: Text('장단점',
                   style: TextStyle(
                     color: Colors.white,

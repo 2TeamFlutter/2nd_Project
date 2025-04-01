@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:team2_2nd_project_tabbar_app/Entertainment/enter_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Gallery/Gall_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Information/info_1.dart';
-import 'package:team2_2nd_project_tabbar_app/Quiz/quiz_1.dart';
+
+import 'Entertainment/enter_1.dart';
+import 'Gallery/gall_1.dart';
+import 'Information/info_1.dart';
+import 'Quiz/quiz_1.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class Enter2 extends StatefulWidget {
@@ -12,6 +14,7 @@ class _Enter2State extends State<Enter2> {
   late int currentPage;
   late Timer myTimer;
   late int speed;
+
   @override
   void initState() {
     super.initState();
@@ -44,6 +47,13 @@ class _Enter2State extends State<Enter2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('산책 갈 준비할까요?',
+        ),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        
+      ),
       backgroundColor: const Color.fromARGB(255, 244, 237, 225),
       body: Center(
         child: Column(
@@ -59,68 +69,64 @@ class _Enter2State extends State<Enter2> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  onPressed: () {
-                    speedButton();
-                    setState(() {
-                      
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      speedButton();
+                      setState(() {
+                        
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      backgroundColor: Colors.red,
                     ),
-                    backgroundColor: Colors.green,
+                    child: Text("빠르게", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
-                  child: Text("빠르게", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    speedDown();
-                    setState(() {
-                      
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      speedDown();
+                      setState(() {
+                        
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      backgroundColor: Colors.blue,
                     ),
-                    backgroundColor: Colors.green,
+                    child: Text("느리게", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
-                  child: Text("느리게", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/E1'),
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    backgroundColor: Colors.green,
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, '/E3'),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Text("전 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  backgroundColor: Colors.blue,
+                  minimumSize: Size(130, 40)
                 ),
-                ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/E3'),
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    backgroundColor: Colors.green,
-                  ),
-                  child: Text("마지막 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                ),
-              ],
+                child: Text("공원 가기", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              ),
             ),
           ],
         ),
       ),
     );
   }
+
   speedButton(){
     myTimer.cancel();
     if(speed>0){
@@ -147,4 +153,4 @@ class _Enter2State extends State<Enter2> {
       setState(() {
       });
     },);}
-}
+  }
