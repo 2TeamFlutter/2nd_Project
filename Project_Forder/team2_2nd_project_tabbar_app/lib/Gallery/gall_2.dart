@@ -25,7 +25,7 @@ class _Gall2State extends State<Gall2> {
       'illust04.jpg',
       'illust05.jpg',
       'illust06.jpg',
-      'illust07.png',
+      'illust07.jpg',
     ];
 
     currentPage = 0;
